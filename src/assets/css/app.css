@@ -1,0 +1,44 @@
+/* theme classes */
+.blue-app {
+  background: hsl(222, 26%, 31%);
+  color:  hsl(0, 0%, 100%);
+}
+
+.white-app {
+  background: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%)
+}
+
+.purple-app {
+  background: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+
+.app {
+  width: 100%; min-height: 100vh;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
+    .calculator-container{
+      width: 100%; min-height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+
+    }
+
+    .calculator-container header {
+      width: 100%; height: 100px; 
+      display: flex; flex-direction: row;
+      justify-content: space-between; align-items: center;
+    }
+
+
+/* above 600px width */
+@media screen and (min-width:600px) {
+  .calculator-container {
+    width: 600px;
+  }
+}
+

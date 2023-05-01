@@ -1,0 +1,102 @@
+.key {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  min-width: 62px; min-height: 62px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center; align-items: center;
+  font-size: 32px;
+  transition: .1s;
+  position: relative;
+}
+
+  .key:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 0 rgba(0,0,0, .1);
+  }
+
+  .key:hover {
+    filter:brightness(1.3)
+  }
+  
+
+  /* .key:hover  */
+
+.reset-button {
+  grid-area: 5 / 1 / 6 / 3;
+}
+.equal-button {
+  grid-area: 5 / 3 / 6 / 5;
+  font-size: 1.3rem;
+}
+
+.reset-button, .del-button {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* theme classes */
+/* blue theme */
+.blue-key {
+  background: hsl(30, 25%, 89%);
+  box-shadow: 0 4px 0 0 hsl(28, 16%, 65%);
+  color:  hsl(221, 14%, 31%);
+
+}
+.blue-equal-button {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0 4px 0 0 hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+}
+.blue-del-button,.blue-reset-button {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 0 0 hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+/* white theme */
+.white-key {
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0 4px 0 0 hsl(35, 11%, 61%);
+}
+.white-equal-button {
+  background: hsl(25, 98%, 40%);
+  box-shadow: 0 4px 0 0 hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+.white-del-button, .white-reset-button {
+  background: hsl(185, 42%, 37%);
+  box-shadow: 0 4px 0 0 hsl(185, 58%, 25%);
+}
+
+
+
+/* purple theme */
+.purple-key {
+  background: hsl(268, 47%, 21%);
+  box-shadow: 0 4px 0 0  hsl(290, 70%, 36%);
+}
+.purple-equal-button {
+  background: hsl(176, 100%, 44%);
+  box-shadow: 0 4px 0 0 hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+.purple-del-button, .purple-reset-button {
+  background: hsl(281, 89%, 26%);
+  box-shadow: 0 4px 0 0 hsl(285, 91%, 52%);
+}
+
+
+@media screen and (min-width:600px) {
+  .equal-button {
+    font-size: 1.5rem;
+  }
+}
+
+
